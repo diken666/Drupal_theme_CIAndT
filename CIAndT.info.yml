@@ -1,0 +1,16 @@
+name: CIAndT
+type: theme
+description: 实现ci&t官网效果
+core: 8.x
+version: VERSION
+screenshot: screenshot.png
+libraries:
+  - CIAndT/global-styling
+
+regions:
+  header: 'Header'
+  banner: 'Banner'
+  content: 'Content'
+  footer: 'Footer'
+  page_top: 'Page Top'
+  page_bottom: 'page Bottom'

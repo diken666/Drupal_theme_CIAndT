@@ -1,0 +1,1 @@
+composer create-project drupal-composer/drupal-project:8.x-dev drupal-8.8.1 --stability dev --no-interaction
