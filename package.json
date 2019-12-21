@@ -18,15 +18,17 @@
   "homepage": "https://github.com/diken666/Drupal_theme_CIAndT#readme",
   "dependencies": {
     "D": "^1.0.0",
+    "autoprefixer": "^9.7.3",
     "css-loader": "^3.4.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cli": "^2. un2.0",
+    "gulp-sass": "^4.0.2"
   },
   "devDependencies": {
+    "gulp-ruby-sass": "^4.0.0",
     "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
+    "sass-loader": "^8.0.0"
   }
 }
