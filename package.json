@@ -16,19 +16,13 @@
     "url": "https://github.com/diken666/Drupal_theme_CIAndT/issues"
   },
   "homepage": "https://github.com/diken666/Drupal_theme_CIAndT#readme",
-  "dependencies": {
-    "D": "^1.0.0",
-    "autoprefixer": "^9.7.3",
-    "css-loader": "^3.4.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-cli": "^2. un2.0",
-    "gulp-sass": "^4.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp-ruby-sass": "^4.0.0",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2"
   }
 }
