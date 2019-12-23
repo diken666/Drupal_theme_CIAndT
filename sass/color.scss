@@ -1,0 +1,32 @@
+$pink: #fc4ca3;
+$green: #20bec6;
+$yellow: #feb834;
+$red: #d71f3c;
+$purple: #7a20c6;
+$blue: #204fc6;
+
+.pink{
+  position: absolute;
+  border-right-color: $pink;
+  border-top-color: $pink;
+}
+.green{
+  border-right-color: $green;
+  border-top-color: $green;
+}
+.yellow{
+  border-right-color: $yellow;
+  border-top-color: $yellow;
+}
+.red{
+  border-right-color: $red;
+  border-top-color: $red;
+}
+.purple{
+  border-right-color: $purple;
+  border-top-color: $purple;
+}
+.blue{
+  border-right-color: $blue;
+  border-top-color: $blue;
+}

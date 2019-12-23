@@ -1,3 +1,5 @@
+@import "./color.scss";
+
 .header{
   position: fixed;
   box-sizing: border-box;
@@ -124,7 +126,7 @@ div[role=navigation]{
 }
 
 .h-des{
-  margin: 60px 144px 30px 144px;
+  margin: 0 144px 30px 144px;
   text-align: center;
 }
 .h-title {
@@ -142,10 +144,15 @@ div[role=navigation]{
 }
 
 
+// provider
 .provider {
+
+  margin-top: 60px;
+
   & > div:nth-child(2) {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 60px;
   }
 
   & .views-row {
@@ -240,6 +247,111 @@ div[role=navigation]{
     color: #5c5b5b;
     line-height: 1.5;
   }
+
+}
+
+
+// custom
+.custom {
+  padding-top: 60px;
+  background: #f8f8f8;
+
+  & > div:nth-child(2) {
+    width: 90%;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  .views-row{
+    position: relative;
+    display: inline-block;
+    width: 23%;
+    height: 150px;
+    margin: 2% 0 2% 1%;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+
+    &:hover .custom-item-hoverImg, &:hover .custom-item-hoverImg{
+      display: block;
+    }
+    &:hover .views-field-field-custom-item-value{
+      display: flex;
+    }
+
+    .custom-item-logo img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 80%;
+      height: auto;
+    }
+
+    .custom-item-hoverImg {
+      display: none;
+    }
+    .custom-item-hoverImg img{
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .views-field-field-custom-item-value{
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+
+      & p:first-child {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      & p:last-child{
+        margin: 5px 0;
+        line-height: 1.2;
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+
+    .views-field-field-custom-topright-color {
+      display: none;
+    }
+
+    .custom-item-link{
+      width: 100%;
+      height: 100%;
+    }
+    .custom-item-link .arrow:before{
+      content: ' ';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background: url("../images/sprites-image.png") 0px -146px;
+      background-size: 40px 168px;
+    }
+    .custom-item-link a{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .views-row:nth-child(4n){
+    margin-right: 1%;
+  }
+
+
 
 }
 
