@@ -8,6 +8,14 @@ let liveReload = require('gulp-livereload');
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass())
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('./css/'))
+    .pipe(liveReload())
+});
+
+gulp.task('cssCompass', function() {
+  return gulp.src('./css/**/*.css')
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./css/'))
     .pipe(liveReload())
 });
@@ -15,7 +23,8 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   liveReload.listen();
   // series 或者 parallel
-  gulp.watch('./sass/*.scss', gulp.parallel('sass'));
+  gulp.watch('./sass/*.scss', gulp.series('sass'));
+  gulp.watch('./css/**/*.css', gulp.series('cssCompass'));
 });
 
 
