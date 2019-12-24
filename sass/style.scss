@@ -13,13 +13,13 @@
     display: inline-block;
   }
 
-  & img:nth-child(1){
+  & a img{
     float: left;
     margin: 8px 0;
     width: 80px;
     height: 43px;
   }
-  & img:nth-child(2){
+  & span img{
     float: left;
     margin: 13px 2px;
     width: 150px;
@@ -51,6 +51,22 @@
     font-weight: 600;
   }
 
+}
+
+.drivenByImpactWhite {
+  display: inline-block;
+}
+.drivenByImpactRed {
+  display: none;
+}
+
+.white-desktop {
+  .drivenByImpactWhite {
+    display: none;
+  }
+  .drivenByImpactRed {
+    display: inline-block;
+  }
 }
 
 div[role=navigation]{
@@ -328,16 +344,6 @@ div[role=navigation]{
       width: 100%;
       height: 100%;
     }
-    .custom-item-link .arrow:before{
-      content: ' ';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 20px;
-      height: 20px;
-      background: url("../images/sprites-image.png") 0px -146px;
-      background-size: 40px 168px;
-    }
     .custom-item-link a{
       position: absolute;
       top: 0;
@@ -345,13 +351,34 @@ div[role=navigation]{
       width: 100%;
       height: 100%;
     }
+
   }
 
   .views-row:nth-child(4n){
     margin-right: 1%;
   }
 
-
-
 }
+
+.trangle{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 18px solid transparent;
+
+  .arrow{
+    position: absolute;
+    display: block;
+    top: -19px;
+    right: -19px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites-image.png") 0px -146px;
+    background-size: 40px 168px;
+  }
+}
+
 

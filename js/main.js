@@ -8,3 +8,16 @@ for (let item of bannerChild) {
     item.style.height = fullScreenHeight + 'px';
   }
 }
+
+
+// 监听滚动事件
+window.addEventListener("scroll", function(event) {
+  let scrollTop = document.documentElement.scrollTop;
+  let dBIWhite = document.querySelector('.drivenByImpactWhite');
+  let dBIRed = document.querySelector('.drivenByImpactRed');
+  let header = document.querySelector('.header');
+
+  if(scrollTop >= 200){
+
+  }
+});
