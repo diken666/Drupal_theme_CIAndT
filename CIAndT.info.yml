@@ -13,6 +13,7 @@ regions:
   provider: 'Provider'
   custom: 'Custom'
   innovation: 'Innovation'
+  locationhero: 'LocationHero'
   content: 'Content'
   footer: 'Footer'
   page_top: 'Page Top'
