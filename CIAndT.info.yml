@@ -12,6 +12,7 @@ regions:
   banner: 'Banner'
   provider: 'Provider'
   custom: 'Custom'
+  innovation: 'Innovation'
   content: 'Content'
   footer: 'Footer'
   page_top: 'Page Top'

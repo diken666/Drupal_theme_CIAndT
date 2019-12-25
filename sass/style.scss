@@ -61,11 +61,24 @@
 }
 
 .white-desktop {
+
+  background-color: rgba(255,255,255,.8);
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 10px -1px #ddd;
+
   .drivenByImpactWhite {
     display: none;
   }
   .drivenByImpactRed {
     display: inline-block;
+  }
+
+  ul li:nth-child(1) a {
+    color: #5b5b5b;
+  }
+
+  li a {
+    color: #5b5b5b;
   }
 }
 
@@ -266,7 +279,6 @@ div[role=navigation]{
 
 }
 
-
 // custom
 .custom {
   padding-top: 60px;
@@ -274,7 +286,8 @@ div[role=navigation]{
 
   & > div:nth-child(2) {
     width: 90%;
-    margin: 0 auto 20px;
+    margin: 0 auto 0;
+    padding-bottom: 60px;
     text-align: center;
   }
   .views-row{
@@ -379,6 +392,10 @@ div[role=navigation]{
     background: url("../images/sprites-image.png") 0px -146px;
     background-size: 40px 168px;
   }
+}
+
+.innovation {
+  padding-top: 60px;
 }
 
 

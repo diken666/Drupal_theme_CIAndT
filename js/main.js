@@ -13,11 +13,11 @@ for (let item of bannerChild) {
 // 监听滚动事件
 window.addEventListener("scroll", function(event) {
   let scrollTop = document.documentElement.scrollTop;
-  let dBIWhite = document.querySelector('.drivenByImpactWhite');
-  let dBIRed = document.querySelector('.drivenByImpactRed');
   let header = document.querySelector('.header');
-
-  if(scrollTop >= 200){
-
+  let bannerHeight = document.querySelector('.banner').clientHeight - header.clientHeight|| 100;
+  if(scrollTop >= bannerHeight){
+    header.classList.add('white-desktop');
+  }else{
+    header.classList.remove('white-desktop');
   }
 });
