@@ -48,7 +48,7 @@ window.addEventListener("scroll", function(event) {
 // 为语言按钮绑定点击事件
 let langBtn = document.querySelector('#header-lang');
 $('#header-lang').click(()=>{
-  if($('#header-lang').hasClass('langBox-show')) {
+  if($('.lang-box').hasClass('langBox-show')) {
     $('.lang-box').slideUp().removeClass("langBox-show");
   } else {
     $('.lang-box').slideDown().addClass("langBox-show");
