@@ -23,17 +23,25 @@ window.addEventListener("scroll", function(event) {
 });
 
 
-// swiper 
-let swiper = new Swiper('.swiper-container', {
-  spaceBetween: 30,
-  effect: 'fade',
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+ // swiper 
+ window.onload = function () {
+  let swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
+    },
+  });
+}
 

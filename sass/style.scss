@@ -818,8 +818,99 @@ div[role=navigation]{
   overflow: hidden;
   position: relative;
   background-color: #222;
+  margin-bottom: 60px;
 
-  
+  .view-content {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+
+  .china-office {
+    width: 40%;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    left: 55%;
+    top: 50%;
+    color: #a29f9f;
+
+    a, li {
+      line-height: 1.5;
+    }
+    p {
+      line-height: 1.5;
+      color: #5c5b5b;
+      font-size: 14px;
+      font-size: .875rem;
+    }
+  }
+  .swiper-container, .swiper-wrapper {
+    width: 100%;
+  }
+  .swiper-slide img {
+      width: 100%;
+      height: auto;
+  }
+
+  h2{
+    color: #fff;
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+  .button-prev, .button-next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    z-index: 50;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .button-prev::before, .button-next::before {
+    font-family: "iconfont";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    content: '\e605';
+    color: #afaeae;
+    font-weight: bold;
+  }
+  .button-next::before {
+    content: '\e60f';
+  }
+  .button-prev {
+    margin-top: -30px;
+  }
+  .button-next {
+    margin-top: 30px;
+  }
+
+  .location-url {
+    margin-top: 10px;
+    a {
+      background-image: url("../images/map.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      color: #a29f9f;
+      padding-left: 26px;
+      padding-top: 2px;
+      font-size: 14px;
+      font-size: .875rem;
+      opacity: .8;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .subscription {

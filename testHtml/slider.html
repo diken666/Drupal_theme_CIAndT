@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <style>
+    .office {
+        overflow: hidden;
+        position: relative;
+        background-color: #222;
+    }
+    .view-content {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .china-office {
+        width: 40%;
+        margin: 0 auto;
+        position: absolute;
+        transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -webkit-transform: translate(0,-50%);
+        -o-transform: translate(0,-50%);
+        left: 55%;
+        top: 50%;
+    }
+    .swiper-container, .swiper-wrapper {
+        width: 100%;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    </style>
+    
+</head>
+<body>
+    <div class="office">
+        <div class="view-content">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../images/1.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/2.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/3.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/4.jpg">
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="china-office">
+          <h2>中国办事处</h2>
+          <div class="location-url">
+              <a href="http://j.map.baidu.com/JQj0I">百度地图链接</a>
+          </div>
+          <ul>
+            <li>上海</li>
+            <li>地址：上海市徐汇区天钥桥路580号6层</li>
+            <li>电话：400-100-6061</li>
+          </ul>
+          <p></p>
+          <div class="location-url">
+              <a href="http://j.map.baidu.com/JQj0I">百度地图链接</a>
+          </div>
+          <ul>
+            <li>宁波总部</li>
+            <li>地址：浙江省宁波市鄞州区天童南路700号荣安大厦A901</li>
+            <li>电话：+86（574）28816655</li>
+            <li>传真：+86（574）28816650</li>
+          </ul>
+        </div>
+    </div>
+</body>
+<script src="../js/swiper.min.js"></script>
+<script>
+    // swiper 
+    window.onload = function () {
+        let swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        loop: true,
+        effect: 'fade',
+        autoplay: {
+            delay: 5000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    }
+    
+</script>
+</html>
