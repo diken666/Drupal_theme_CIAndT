@@ -15,6 +15,7 @@ regions:
   innovation: 'Innovation'
   locationhero: 'LocationHero'
   subscription: 'Subscription'
+  office: 'Office'
   content: 'Content'
   footer: 'Footer'
   page_top: 'Page Top'

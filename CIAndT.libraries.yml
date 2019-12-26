@@ -2,7 +2,9 @@ global-styling:
   version: VERSION
   css:
     theme:
-      css/style.css: {}
       css/global.css: {}
+      css/swiper.min.css: {}
+      css/style.css: {}
   js:
     js/main.js: {}
+    js/swiper.min.js: 

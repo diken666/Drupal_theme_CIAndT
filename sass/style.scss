@@ -814,3 +814,74 @@ div[role=navigation]{
 }
 
 
+.office {
+  overflow: hidden;
+  position: relative;
+  background-color: #222;
+
+  
+}
+
+.subscription {
+  .title {
+    text-align: center;
+    color: #ec1940;
+    font-size: 32px;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.5;
+    padding: 15px 0;
+    font-weight: bold;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 580px;
+    margin: 20px auto;
+    min-width: 500px;
+    padding-bottom: 80px;
+
+    .box-input {
+      max-width: 100%;
+      width: 61%;
+      border: 2px solid #ccc;
+      border-radius: 0;
+      line-height: 49px;
+      height: 49px;
+      font-size: .875rem;
+      text-indent: 10px;
+      box-sizing: border-box !important;
+      padding: 0;
+
+      &:focus{
+        box-shadow: 0 0 5px #ccc;
+      }
+    }
+    .box-btn {
+      background: #ec1940;
+      color: #fff;
+      border: 2px solid #ec1940 !important;
+      border-radius: 0;
+      text-shadow: none;
+      box-shadow: none !important;
+      width: 38%;
+      margin-left: 1%;
+      height: 49px;
+      line-height: 49px;
+      font-size: 18px;
+      padding: 0;
+      transition: .25s;
+      box-sizing: border-box !important;
+      cursor: pointer;
+
+      &:hover {
+        background: #fff;
+        color: #ec1940;
+      }
+    }
+  }
+}
+
+
