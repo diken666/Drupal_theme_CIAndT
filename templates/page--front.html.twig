@@ -62,8 +62,20 @@
   <div class="innovation" role="innovation">
     {{ page.innovation }}
   </div>
-  <div class="locationhero" role="locationhero">
-    {{ page.locationhero }}
+  <div class="location" role="location">
+    {{ page.locationhero.localtionherodescription }}
+    <div class="location-container">
+      {% if page.locationhero.locationheromap %}
+        <div class="view-header">
+          <div class="map">{{ page.locationhero.locationheromap }}</div>
+        </div>
+      {% endif %}
+      {% if page.locationhero.views_block__location_show_block_1 %}
+        <div class="view-content">
+          {{ page.locationhero.views_block__location_show_block_1 }}
+        </div>
+      {% endif %}
+    </div>
   </div>
 {#  <main role="main">#}
 {#      {{ page.content }}#}

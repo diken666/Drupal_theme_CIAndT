@@ -1,4 +1,5 @@
 @import "./color.scss";
+@import "./font.scss";
 
 .header{
   position: fixed;
@@ -615,8 +616,142 @@ div[role=navigation]{
   }
 }
 
-.locationhero {
+.location {
   margin-top: 60px;
+  text-align: center;
+
+  .location-container {
+    max-width: 85%;
+    margin: 0 auto 30px;
+    display: inline-block;
+    position: relative;
+  }
+  .map img{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+  }
+  .view-content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    .view-ctn {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .views-row {
+      position: absolute;
+      color: #ea2c4b;
+
+      &::before {
+        font-family: "iconfont";
+        content: '\e78d';
+        display: inline-block;
+        color: #ea2c4b;
+        position: absolute;
+        margin-top: -32px;
+        font-size: 32px;
+        font-size: 2rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      &:last-child > span {
+        display: block;
+        text-align: left;
+        line-height: 1.5;
+      }
+
+      .views-field-field-location-name{
+        position: relative;
+        top: -20px;
+        font-size: 14px;
+        font-size: .875rem;
+      }
+      &:nth-child(-n+4) .views-field-field-location-name {
+        left: -105%;
+      }
+      &:not(:nth-child(-n+4)) .views-field-field-location-name {
+        right: -30px;
+    }
+      &:last-child:before {
+        font-size: 50px;
+        font-size: 3.125rem;
+        margin-top: -80px;
+        margin-left: -35px;
+      }
+      &:last-child{
+        margin-left: -45px;
+        margin-top: 50px;
+        background-color: #ea2c4b;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 12px;
+        font-size: .75rem;
+      }
+      &:last-child:after {
+        content: ' 1';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 11px solid transparent;
+        border-bottom: 15px solid #ea2c4b;
+        border-right: 5px solid transparent;
+        top: -15px;
+        left: 40px;
+        color: transparent;
+      }
+      &:last-child .views-field-field-location-name {
+        position: static;
+      }
+      &:nth-child(1){
+        left: 25%;
+        top: 45%;
+      }
+      &:nth-child(2){
+        left: 33%;
+        top: 69%;
+      }
+      &:nth-child(3){
+        left: 33%;
+        top: 72%;
+      }
+      &:nth-child(4){
+        left: 45%;
+        top: 33.5%;
+      }
+      &:nth-child(5){
+        left: 35%;
+        top: 67%;
+      }
+      &:nth-child(6){
+        left: 35%;
+        top: 70.5%;
+      }
+      &:nth-child(7){
+        left: 82.2%;
+        top: 43%;
+      }
+      &:nth-child(8){
+        left: 29%;
+        top: 35%;
+      }
+      &:nth-child(9){
+        left: 27%;
+        top: 41%;
+      }
+      &:nth-child(10){
+        left: 75.7%;
+        top: 45%;
+      }
+    }
+  }
 }
 
 .footer{
