@@ -33,15 +33,16 @@
     font-size: 16px;
     margin: 0 10px;
   }
-  & a {
+  & div[role=navigation] a {
     color: #fff;
     opacity: .8;
-  }
-  & a:hover {
-    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
-  & ul li:nth-child(1) a {
+  & div[role=navigation] ul li:nth-child(1) a {
     display: block;
     padding: 0 20px;
     line-height: 40px;
@@ -52,6 +53,85 @@
     font-weight: 600;
   }
 
+
+  .lang-box{
+    width: 10.5%;
+    display: none;
+    padding: 15px 15px 0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px -1px #ddd;
+    font-size: 14px;
+    font-size: .875rem;
+
+    &::before {
+      content: ' ';
+      width: 22px;
+      height: 15px;
+      background-image: url("../images/top.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: block;
+      position: absolute;
+      top: -15px;
+      right: 20px;
+    }
+    a {
+      color: #5c5b5b;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    li a::before {
+      content: '';
+      width: 22px;
+      height: 22px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+    .en a::before{
+      background-image: url("../images/en.png");
+    }
+    .zh a::before{
+      background-image: url("../images/chinese.png");
+    }
+    .ja a::before{
+      background-image: url("../images/japanese.png");
+    }
+    .pt a::before{
+      background-image: url("../images/pt.png");
+    }
+    .gl a::before{
+      background-image: url("../images/global.png");
+    }
+  }
+
+  
+
+}
+
+.lang-en {
+  background-image: url('../images/en.png');
+}
+.lang-cn {
+  background-image: url('../images/chinese.png');
+}
+
+#header-lang {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  float: right;
+  cursor: pointer;
+  margin-right: 23px;
 }
 
 .drivenByImpactWhite {
@@ -89,6 +169,7 @@ div[role=navigation]{
   align-items: center;
   float: right;
   height: 100%;
+  margin-right: 10px;
 }
 
 

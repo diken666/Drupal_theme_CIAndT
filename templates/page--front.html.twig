@@ -45,7 +45,13 @@
 <div class="layout-container">
 
   <header role="header" class="header">
-    {{ page.header }}
+  {{kint(page.header)}}
+    {{ page.header.headerlogo_2 }}
+    {{ page.header.drivenbyimpactwhite_2 }}
+    {{ page.header.drivenbyimpactred }}
+    <span id="header-lang" class="lang-cn"></span>
+    {{ page.header.headermenu_2 }}
+    {{ page.header.langlink }}
   </header>
 
   <div class="banner" role="banner">
@@ -62,7 +68,7 @@
   <div class="innovation" role="innovation">
     {{ page.innovation }}
   </div>
-  <div class="location" role="location">
+  <div id="location" class="location" role="location">
     {{ page.locationhero.localtionherodescription }}
     <div class="location-container">
       {% if page.locationhero.locationheromap %}

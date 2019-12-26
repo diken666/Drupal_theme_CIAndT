@@ -45,3 +45,30 @@ window.addEventListener("scroll", function(event) {
   });
 }
 
+// 为语言按钮绑定点击事件
+let langBtn = document.querySelector('#header-lang');
+$('#header-lang').click(()=>{
+  if($('#header-lang').hasClass('langBox-show')) {
+    $('.lang-box').slideUp().removeClass("langBox-show");
+  } else {
+    $('.lang-box').slideDown().addClass("langBox-show");
+  }
+  
+  console.log("123");
+})
+// langBtn.addEventListener('click', ()=> {
+//   // let langBox = document.querySelector('.lang-box');
+//   $('.lang-box').toggle();
+//   // if ( langBox.classList.contains('langBox-show') ) {
+//   //   // langBox.style.height = '0';
+//   //   $('.lang-box').slideUp()
+//   //   langBox.classList.remove('langBox-show');
+//   // } else {
+//   //   // langBox.style.height = 'auto';
+//   //   $('.lang-box').slideDown()
+//   //   langBox.classList.add('langBox-show');
+//   // }
+  
+  
+// })
+

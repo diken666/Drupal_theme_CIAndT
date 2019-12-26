@@ -20,6 +20,7 @@ a, a:visited, a:active {
 body{
   font: 16px/1 "Helvetica Neue",Helvetica,Tahoma,Arial,"Microsoft JhengHei","Microsoft YaHei","Hiragino Sans GB","Heiti SC",sans-serif;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 input, button {
   outline: none;
