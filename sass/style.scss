@@ -125,6 +125,36 @@
     & li {
       display: block;
     }
+    .toggle-show {
+      .icon-bar {
+        display: none !important;
+      }
+      .icon-bar:last-child {
+        display: block !important;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 14px 14px 14px;
+        border-color: transparent transparent #fff transparent;
+        background: transparent;
+        margin-top: 6px;
+      }
+    }
+    .header-menu-toggle {
+      float: left;
+      margin-top: 15px;
+      cursor: pointer;
+
+      .icon-bar {
+        display: block;
+        width: 28px;
+        height: 2px;
+        border-radius: 1px;
+        margin: 6px 0;
+        background: #fff;
+      }
+
+    }
     .header-middle-logo img{
       position: absolute;
       left: 50%;
@@ -145,7 +175,7 @@
   background-image: url('../images/chinese.png');
 }
 
-#header-lang {
+.lang {
   position: relative;
   width: 16px;
   height: 16px;

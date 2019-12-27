@@ -1,5 +1,4 @@
 let fullScreenHeight = document.documentElement.clientHeight;
-
 let banner = document.getElementsByClassName('banner')[0];
 let bannerChild = banner.children;
 banner.style.height = fullScreenHeight + 'px';
@@ -11,7 +10,7 @@ for (let item of bannerChild) {
 
 
 // 监听滚动事件
-window.addEventListener("scroll", function(event) {
+window.addEventListener("scroll", function() {
   let scrollTop = document.documentElement.scrollTop;
   let header = document.querySelector('.header');
   let bannerHeight = document.querySelector('.banner').clientHeight - header.clientHeight|| 100;
@@ -47,12 +46,22 @@ window.addEventListener("scroll", function(event) {
 }
 
 // 为语言按钮绑定点击事件
-let langBtn = document.querySelector('#header-lang');
 $('#header-lang').click(()=>{
   if($('.lang-box').hasClass('langBox-show')) {
     $('.lang-box').slideUp(200).removeClass("langBox-show");
+    $('#header-lang').removeClass("lang-show");
   } else {
     $('.lang-box').slideDown(200).addClass("langBox-show");
+    $('#header-lang').addClass("lang-show");
+  }
+})
+
+// 为头部添加功能按钮监听事件
+$('.header-menu-toggle').click(()=>{
+  if($('.header-menu-toggle').hasClass('toggle-show')) {
+    $('.header-menu-toggle').removeClass("toggle-show");
+  } else {
+    $('.header-menu-toggle').addClass("toggle-show");
   }
 })
 

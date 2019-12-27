@@ -1,6 +1,6 @@
-@media (min-width: 1350px) {
+@media (min-width: 1024px) {
     .header {
-        #header-lang {
+        .lang {
             top: 19px;
             width: 22px;
             height: 22px;
@@ -21,14 +21,26 @@
         background: #ce002b;
         opacity: 1;
 
-        #header-lang {
-            top: 14px;
+        .lang {
+            top: 12px;
             width: 32px;
             height: 32px;
             border: 2px solid #fff;
             border-radius: 50%;
             margin-right: 0;
         }
+        .lang-show {
+            top: 16px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 14px 14px 14px;
+            border-color: transparent transparent #fff transparent;
+            background: transparent;
+            margin-top: 6px;
+            border-radius: 0;
+        }
+        
 
         div[role=navigation], & > a {
             display: none;
