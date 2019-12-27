@@ -15,7 +15,8 @@ window.addEventListener("scroll", function(event) {
   let scrollTop = document.documentElement.scrollTop;
   let header = document.querySelector('.header');
   let bannerHeight = document.querySelector('.banner').clientHeight - header.clientHeight|| 100;
-  if(scrollTop >= bannerHeight){
+  let clientWidth = document.body.clientWidth; 
+  if(scrollTop >= bannerHeight && clientWidth >= 1024){
     header.classList.add('white-desktop');
   }else{
     header.classList.remove('white-desktop');
@@ -49,26 +50,9 @@ window.addEventListener("scroll", function(event) {
 let langBtn = document.querySelector('#header-lang');
 $('#header-lang').click(()=>{
   if($('.lang-box').hasClass('langBox-show')) {
-    $('.lang-box').slideUp().removeClass("langBox-show");
+    $('.lang-box').slideUp(200).removeClass("langBox-show");
   } else {
-    $('.lang-box').slideDown().addClass("langBox-show");
+    $('.lang-box').slideDown(200).addClass("langBox-show");
   }
-  
-  console.log("123");
 })
-// langBtn.addEventListener('click', ()=> {
-//   // let langBox = document.querySelector('.lang-box');
-//   $('.lang-box').toggle();
-//   // if ( langBox.classList.contains('langBox-show') ) {
-//   //   // langBox.style.height = '0';
-//   //   $('.lang-box').slideUp()
-//   //   langBox.classList.remove('langBox-show');
-//   // } else {
-//   //   // langBox.style.height = 'auto';
-//   //   $('.lang-box').slideDown()
-//   //   langBox.classList.add('langBox-show');
-//   // }
-  
-  
-// })
 

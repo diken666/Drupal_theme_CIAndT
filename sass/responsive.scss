@@ -9,15 +9,34 @@
             width: 30px;
             height: 30px;
         }
+        .header-middle {
+            display: none;
+        }
 
     }
-    
    
 }
 @media (max-width: 1024px) and (min-width: 0) {
     .header {
-        div[role=navigation] {
+        background: #ce002b;
+        opacity: 1;
+
+        #header-lang {
+            top: 14px;
+            width: 32px;
+            height: 32px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            margin-right: 0;
+        }
+
+        div[role=navigation], & > a {
             display: none;
         }
     }
+    .drivenByImpactWhite, .drivenByImpactWhite {
+        display: none;
+    }
+    
+
 }
