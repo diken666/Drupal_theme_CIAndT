@@ -45,6 +45,30 @@
         div[role=navigation], & > a {
             display: none;
         }
+        .lang-box {
+            width: 100%;
+            padding: 0;
+            left: 0;
+            background: #ce002b;
+
+            &::before {
+                display: none;
+            }
+            & li {
+                margin: 0;
+                display: block;
+                a {
+                    line-height: 60px;
+                    font-size: 18px;
+                    padding: 0 20px 0 10px;
+                    color: #fff;
+                    width: 100%;
+                    border-top: 1px solid rgba(255,255,255,.6);
+                    display: block;
+                }
+            }
+            
+        }
     }
     .drivenByImpactWhite, .drivenByImpactWhite {
         display: none;

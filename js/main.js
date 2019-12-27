@@ -52,6 +52,8 @@ $('#header-lang').click(()=>{
     $('#header-lang').removeClass("lang-show");
   } else {
     $('.lang-box').slideDown(200).addClass("langBox-show");
+    $('.header-middle-nav').hide();
+    $('.header-menu-toggle').removeClass("toggle-show");
     $('#header-lang').addClass("lang-show");
   }
 })
@@ -60,8 +62,12 @@ $('#header-lang').click(()=>{
 $('.header-menu-toggle').click(()=>{
   if($('.header-menu-toggle').hasClass('toggle-show')) {
     $('.header-menu-toggle').removeClass("toggle-show");
+    $('.header-middle-nav').slideUp(200);
   } else {
     $('.header-menu-toggle').addClass("toggle-show");
+    $('.lang-box').slideUp(0).removeClass("langBox-show");
+    $('#header-lang').removeClass("lang-show");
+    $('.header-middle-nav').slideDown(200);
   }
 })
 
