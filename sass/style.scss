@@ -284,11 +284,13 @@
   text-align: center;
 }
 .banner-d-con h1 {
-  font-size: 3rem;
+  font-size: 45px;
+  font-size: 2.8125rem;
   padding: 15px 0;
 }
 .banner-d-con p {
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   margin: 24px 0;
   line-height: 1.5
 }
@@ -311,11 +313,16 @@
 }
 
 .h-des{
-  margin: 0 144px 30px 144px;
+  margin: 0 auto;
   text-align: center;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
 }
 .h-title {
-  font-size: 35px;
+  font-size: 32px;
+  font-size: 2rem;
   color: #4d4c4c;
   line-height: 1.5;
   padding: 15px 0;
@@ -323,7 +330,8 @@
 }
 
 .h-ctx {
-  font-size: 16px;
+  font-size: 14px;
+  font-size: .875rem;
   color: #5c5b5b;
   line-height: 1.5;
 }
@@ -352,7 +360,7 @@
       display: none;
     }
 
-    & ul {
+    & > ul {
       position: absolute;
       display: none;
       left: 50%;
@@ -389,7 +397,7 @@
       }
     }
 
-    & ul li {
+    & > ul li {
       position: relative;
       display: list-item ;
       //padding-left: 10px;
@@ -398,7 +406,7 @@
       font-size: 12px;
       text-align: -webkit-match-parent;
     }
-    & ul li:before{
+    & > ul li:before{
       margin-right: 4px;
       position: relative;
       top: -2px;
@@ -431,6 +439,13 @@
   & .text {
     color: #5c5b5b;
     line-height: 1.5;
+    font-size: 14px;
+    font-size: .875rem;
+  }
+
+  .provider-mobile-description{
+
+    
   }
 
 }

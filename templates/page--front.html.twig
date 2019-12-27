@@ -44,33 +44,7 @@
 #}
 <div class="layout-container">
   <header role="header" class="header">
-  	{# {{kint(page.header | without(page.header.headerlogo_2, page.header.drivenbyimpactwhite_2))}} #}
-    {{ page.header.headerlogo_2 }}
-    {{ page.header.drivenbyimpactwhite_2 }}
-    {{ page.header.drivenbyimpactred }}
-    <span id="header-lang" class="lang lang-cn"></span>
-    {{ page.header.headermenu_2 }}
-    {{ page.header.langlink }}
-    <div class="header-middle">
-		<div class="header-menu-toggle">
-			<span class="icon-bar first "></span>
-			<span class="icon-bar second"></span>
-			<span class="icon-bar third"></span>
-		</div>
-		<a class="header-middle-logo" href="#"><img src="/sites/drupal.dd/files/inline-images/logo-mobile.png"></a>
-    	<div class="header-middle-nav">
-			<ul>
-				<li><a href="#">主页</a></li>
-				<li><a href="#">资讯中心</a></li>
-				<li><a href="#">服务范围</a></li>
-				<li><a href="#">客户及案例</a></li>
-				<li><a href="#">合作伙伴</a></li>
-				<li><a href="#">覆盖行业</a></li>
-				<li><a href="#">关于我们</a></li>
-				<li><a href="#">精益数字化</a></li>
-			</ul>
-		</div>
-    </div>
+    {{ page.header }}
   </header>
 
   <div class="banner" role="banner">
