@@ -80,15 +80,22 @@
         display: none;
     }
     .provider {
-        .views-row:hover & > ul{
+        .views-row:hover  ul, .views-row:hover .provider-pic{
             display: none !important;
         }
         .provider-mobile-description{
+            display: block;
             font-size: 14px;
             font-size: .875rem;
         }
         .provider-gif, .provider-pic{
             display: none !important;
+        }
+        .provider-middle-image {
+            display: block;
+        }
+        .down {
+            display: none;
         }
     }
 }
@@ -109,5 +116,12 @@
             width: 80%;
             margin: 0 auto;
         }
+        .views-row {
+            width: 100%;
+        }
+    }
+    .custom .views-row {
+        width: 100%;
+        height: 50vw;
     }
 }

@@ -355,6 +355,7 @@
     margin: 2% 0 2% 1%;
     text-align: center;
     cursor: pointer;
+    vertical-align: top;
 
     & .provider-pic {
       display: none;
@@ -444,8 +445,25 @@
   }
 
   .provider-mobile-description{
+    display: none;
+    line-height: 1.5;
+  }
 
-    
+  .provider-middle-image {
+    display: none;
+    div {
+      width: 120px;
+      margin: 0 auto;
+      height: 120px;
+      background-color: #d71f3c;
+      border-radius: 60px;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+    }
   }
 
 }
@@ -465,7 +483,7 @@
     position: relative;
     display: inline-block;
     width: 23%;
-    height: 150px;
+    height: 11.5vw;
     margin: 2% 0 2% 1%;
     text-align: center;
     background: #fff;
@@ -509,13 +527,15 @@
       color: #fff;
 
       & p:first-child {
-        font-size: 20px;
+        font-size: 16px;
+        font-size: 1rem;
         font-weight: bold;
       }
       & p:last-child{
         margin: 5px 0;
         line-height: 1.2;
-        font-size: 14px;
+        font-size: 12px;
+        font-size: .75rem;
         font-weight: normal;
       }
     }
