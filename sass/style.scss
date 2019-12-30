@@ -361,7 +361,7 @@
       display: none;
     }
 
-    & > ul {
+    &  ul {
       position: absolute;
       display: none;
       left: 50%;
@@ -398,7 +398,7 @@
       }
     }
 
-    & > ul li {
+    &  ul li {
       position: relative;
       display: list-item ;
       //padding-left: 10px;
@@ -407,7 +407,7 @@
       font-size: 12px;
       text-align: -webkit-match-parent;
     }
-    & > ul li:before{
+    &  ul li:before{
       margin-right: 4px;
       position: relative;
       top: -2px;
