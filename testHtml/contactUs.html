@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        .contactUs {
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+            color: #fff;
+            background: #d71f3c;
+            cursor: pointer;
+            line-height: 1.5;
+        }
+        .small-ctn {
+            display: none;
+            text-align: center;
+            width: 25px;
+            padding: 0 8px 10px;
+            /* padding-right: 15px; */
+            transition: all .5s;
+        }
+        .small-ctn::before {
+            content: " ";
+            width: 40px;
+            height: 40px;
+            display: block;
+            background: url("../images/phone-white.png") no-repeat center;
+            background-size: 20px 20px;
+            background-position: 10px 10px;
+            border-bottom: 1px solid #fff;
+            margin-left: -7px;
+            margin-bottom: 2px;
+        }
+        .contact-ctn {
+            width: 295px;
+            min-height: 320px;
+            padding: 35px 40px;
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            z-index: 1001;
+            color: #fff;
+            background-color: #d71f3c;
+            box-sizing: border-box;
+            -webkit-transition: -webkit-transform 500ms ease;
+            transition: -webkit-transform 500ms ease;
+            transition: transform 500ms ease;
+            transition: transform 500ms ease,-webkit-transform 500ms ease;
+        }
+        .dark-red {
+            color: #6b0f1e;
+        }
+    </style>
+</head>
+<body>
+    <div class="contactUs">
+        <div class="black-board"></div>
+        <div class="small-ctn">联系我们</div>
+        <div class="contact-ctn">
+            <div class="ctc-tel">
+                <p class="dark-red">进一步了解我们，请致电</p>
+                <p class="tel">400-100-6061</p>
+            </div>
+            <div class="dark-red">或留下您的称呼和联系方式，让CI＆T的数字化专家联系您</div>
+            <div class="contact-item">
+                <form action="/" method="POST">
+                    <input type="text" placeholder="姓名" name="contact_name">
+                    <input type="text" placeholder="公司" name="company_name">
+                    <input type="text" placeholder="公司邮箱" name="guest_email">
+                    <input type="text" placeholder="手机号" name="telephone">
+                    <input type="text" placeholder="验证码" name="captcha_response">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
