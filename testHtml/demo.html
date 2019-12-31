@@ -83,6 +83,17 @@
     <!-- custom -->
     <div class="custom-item-logo"><img src="" alt=""></div>
     <div class="custom-item-hoverImg"><img src="" alt=""></div>
-    <div class="custom-item-link"><a href=""></a></div>
+
+    {% set classes = "trangle " ~ field_custom_item_color %}
+    <div class="custom-item-link">
+        <div class="{{ classes }}">
+                <span class="arrow"></span>
+        </div>
+    {{ field_custom_item_link }}
+    </div>
+
+    <!-- innovation -->
+    <span class="innovation-image">{{ field_innovation_image }}</span>
+
 </body>
 </html>
