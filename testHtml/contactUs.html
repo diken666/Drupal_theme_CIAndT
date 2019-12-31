@@ -13,7 +13,6 @@
             right: 0;
             color: #fff;
             background: #d71f3c;
-            cursor: pointer;
             line-height: 1.5;
         }
         .small-ctn {
@@ -53,7 +52,103 @@
             transition: transform 500ms ease,-webkit-transform 500ms ease;
         }
         .dark-red {
-            color: #6b0f1e;
+            color: #6b0f1e !important;
+        }
+        .contactUs p {
+            color: #fff;
+            margin: 0 0 .5em;
+            font-size: 16px;
+            font-size: 1rem;
+        }
+        .ctc-tel {
+            margin-bottom: 1.5em;
+        }
+        .ctc-edit {
+            margin-bottom: 20px;
+        }
+        .tel{
+            font-size: 20px;
+            font-size: 1.25rem;
+        }
+        .tel::before {
+            content: "";
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            vertical-align: middle;
+            background: url("../images/contact-icon1.png") center no-repeat;
+            display: inline-block;
+            background-size: 100%;
+        }
+        .ctc-form input {
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            height: 25px;
+            margin-bottom: 10px;
+            width: 70%;
+            height: 32px;
+            padding: 2px 5px
+        }
+        .ctc-form input[name="contact_name"] {
+            padding-left: 30px;
+            background: url("../images/contact-icon2.png") no-repeat left center;
+            background-size: 20px auto;
+        }
+        .ctc-form input[name="company_name"] {
+            padding-left: 30px;
+            background: url("../images/contact-icon3.png") no-repeat left center;
+            background-size: 20px auto;
+        }
+        .ctc-form input[name="guest_email"] {
+            padding-left: 30px;
+            background: url("../images/contact-icon4.png") no-repeat left center;
+            background-size: 20px auto;
+        }
+        .ctc-form input[name="telephone"] {
+            padding-left: 30px;
+            background: url("../images/contact-icon5.png") no-repeat left center;
+            background-size: 20px auto;
+        }
+        .ctc-form input[name="captcha_response"] {
+            padding-left: 30px;
+            background: url("../images/contact-icon6.png") no-repeat left center;
+            background-size: 20px auto;
+        }
+        .contact-item {
+            position: relative;
+        }
+        .submit {
+            position: absolute;
+            bottom: 15px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+            background: url("../images/submit.png") center no-repeat;
+            background-size: 100%;
+            cursor: pointer;;
+        }
+        .captcha{
+            position: relative;
+            display: block;
+            width: 85%;
+            text-align: center;
+        }
+        .captcha .code {
+            width: 126px;
+            height: auto;
+            opacity: .7 !important;
+            border-radius: 4px;
+        }
+        .captcha .refresh {
+            width: 20px;
+            position: absolute;
+            right: -42px;
+            bottom: 20px;
+            transform: rotate(-58deg);
+            cursor: pointer;
         }
     </style>
 </head>
@@ -66,15 +161,20 @@
                 <p class="dark-red">进一步了解我们，请致电</p>
                 <p class="tel">400-100-6061</p>
             </div>
-            <div class="dark-red">或留下您的称呼和联系方式，让CI＆T的数字化专家联系您</div>
+            <div class="dark-red ctc-edit">或留下您的称呼和联系方式，让CI＆T的数字化专家联系您</div>
             <div class="contact-item">
-                <form action="/" method="POST">
+                <form class="ctc-form" action="/" method="POST">
                     <input type="text" placeholder="姓名" name="contact_name">
                     <input type="text" placeholder="公司" name="company_name">
                     <input type="text" placeholder="公司邮箱" name="guest_email">
                     <input type="text" placeholder="手机号" name="telephone">
                     <input type="text" placeholder="验证码" name="captcha_response">
                 </form>
+                <div class="submit"></div>
+            </div>
+            <div class="captcha">
+                <img class="code" src="../images/code.jpeg" alt="code">
+                <img class="refresh" src="../images/refresh.png" alt="refresh">
             </div>
         </div>
     </div>
