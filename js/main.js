@@ -71,3 +71,21 @@ $('.header-menu-toggle').click(()=>{
   }
 })
 
+// 联系我们 添加事件 
+$('.small-ctn').click(()=>{
+  console.log("click")
+  $('.small-ctn').hide();
+  $('.black-board').show();
+  $('.contact-ctn').show();
+  setTimeout(()=>{
+    $('.contact-ctn').css({
+      right: '0'
+    })
+  })
+})
+$('.black-board').click(()=>{
+  $('.black-board').hide();
+  $('.contact-ctn').hide();
+  $('.small-ctn').show();
+})
+
