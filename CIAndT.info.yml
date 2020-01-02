@@ -18,5 +18,6 @@ regions:
   office: 'Office'
   content: 'Content'
   footer: 'Footer'
+  contactUs: 'ContactUs'
   page_top: 'Page Top'
   page_bottom: 'page Bottom'

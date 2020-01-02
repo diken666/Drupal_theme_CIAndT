@@ -185,6 +185,8 @@
     }
 
     .footer {
+        margin-bottom: 46px;
+
         .footer-contactUs{
             display: block;
             background: #fff;
@@ -222,5 +224,20 @@
 
         }
         
+    }
+
+    .contactUs {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+        .contact-ctn , .small-ctn{
+            display: none
+        }
+
+        .cs-middle-chat {
+            display: block;
+        }
+
     }
 }

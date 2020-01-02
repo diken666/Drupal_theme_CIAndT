@@ -88,31 +88,9 @@
 {#  </main>#}
 
   {% include '@CIAndT/custom-footer.html.twig' %}
-<div class="black-board"></div>
-      <div class="contactUs">
-        
-        <div class="small-ctn">联系我们</div>
-        <div class="contact-ctn">
-            <div class="ctc-tel">
-                <p class="dark-red">进一步了解我们，请致电</p>
-                <p class="tel">400-100-6061</p>
-            </div>
-            <div class="dark-red ctc-edit">或留下您的称呼和联系方式，让CI＆T的数字化专家联系您</div>
-            <div class="contact-item">
-                <form class="ctc-form" action="/" method="POST">
-                    <input type="text" placeholder="姓名" name="contact_name">
-                    <input type="text" placeholder="公司" name="company_name">
-                    <input type="text" placeholder="公司邮箱" name="guest_email">
-                    <input type="text" placeholder="手机号" name="telephone">
-                    <input type="text" placeholder="验证码" name="captcha_response">
-                </form>
-                <div class="submit"></div>
-            </div>
-            <div class="captcha">
-                <img class="code" src="sites/default/files/inline-images/code.jpeg" alt="code">
-                <img class="refresh" src="sites/default/files/inline-images/refresh.png" alt="refresh">
-            </div>
-        </div>
-    </div>
 
+ {% if page.contactUs %} 
+    <div class="black-board"></div>
+    {{ page.contactUs }}
+ {% endif %}
 </div>
