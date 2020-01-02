@@ -74,18 +74,16 @@ $('.header-menu-toggle').click(()=>{
 // 联系我们 添加事件 
 $('.small-ctn').click(()=>{
   console.log("click")
-  $('.small-ctn').hide();
+  $('.small-ctn').hide().css({right: '0'});
   $('.black-board').show();
   $('.contact-ctn').show();
   setTimeout(()=>{
-    $('.contact-ctn').css({
-      right: '0'
-    })
-  })
+    $('.contact-ctn').css({right: '0'})
+  }, 0);
 })
 $('.black-board').click(()=>{
   $('.black-board').hide();
-  $('.contact-ctn').hide();
-  $('.small-ctn').show();
+  $('.contact-ctn').hide().css({right: '-30px'});
+  $('.small-ctn').show().css({right: '-10px'});
 })
 

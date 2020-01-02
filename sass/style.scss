@@ -1064,6 +1064,7 @@
     z-index: 50;
     border-radius: 20px;
     cursor: pointer;
+    user-select: none;
   }
   .button-prev::before, .button-next::before {
     font-family: "iconfont";
@@ -1182,9 +1183,13 @@
     text-align: center;
     width: 25px;
     padding: 0 8px 10px;
-    /* padding-right: 15px; */
+    padding-right: 20px;
     transition: all .5s;
     cursor: pointer;
+    position: absolute;
+    right: -10px;
+    bottom: 50px;
+    background: #d71f3c;
   }
   .small-ctn::before {
     content: " ";
@@ -1204,7 +1209,7 @@
     min-height: 320px;
     padding: 35px 50px 35px 40px;
     position: absolute;
-    right: -10px;
+    right: -30px;
     bottom: 0;
     z-index: 1001;
     color: #fff;
