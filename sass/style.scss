@@ -121,7 +121,9 @@
   }
   
   .header-middle {
-    position: relative;
+    position: absolute;
+    top: 0;
+    width:  100%;
     display: block;
     & li {
       display: block;
@@ -214,6 +216,7 @@
   float: right;
   cursor: pointer;
   margin-right: 23px;
+  z-index: 120;
 }
 
 .drivenByImpactWhite {
@@ -1362,17 +1365,11 @@ main[role="main"] {
 }
 
 .h-banner {
-  position: absolute;
-  top: 60px;
-
-  &::after {
-    content: '';
-    clear: both;
-  }
-
+  
   .h-pc-banner img, .h-mobile-banner img{
     width: 100%;
     height: auto;
+    margin-top: 60px;
   }
   .h-mobile-banner {
     display: none;

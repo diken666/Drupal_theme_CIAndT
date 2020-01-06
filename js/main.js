@@ -1,7 +1,7 @@
 
 let fullScreenHeight = document.documentElement.clientHeight;
 let banner = document.getElementsByClassName('banner')[0];
-if ( banner ) {
+if ( banner && fullScreenHeight ) {
   let bannerChild = banner.children;
   banner.style.height = fullScreenHeight + 'px';
   for (let item of bannerChild) {
@@ -18,13 +18,17 @@ if ( banner ) {
 window.addEventListener("scroll", function() {
   let scrollTop = document.documentElement.scrollTop;
   let header = document.querySelector('.header');
-  let bannerHeight = document.querySelector('.banner').clientHeight - header.clientHeight|| 100;
-  let clientWidth = document.body.clientWidth; 
-  if(scrollTop >= bannerHeight && clientWidth >= 1024){
-    header.classList.add('white-desktop');
-  }else{
-    header.classList.remove('white-desktop');
+  let banner = document.querySelector('.banner');
+  if ( header && banner ) {
+    let bannerHeight = banner.clientHeight - header.clientHeight|| 100;
+    let clientWidth = document.body.clientWidth; 
+    if(scrollTop >= bannerHeight && clientWidth >= 1024){
+      header.classList.add('white-desktop');
+    }else{
+      header.classList.remove('white-desktop');
+    }
   }
+  
 });
 
 
