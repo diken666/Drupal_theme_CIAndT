@@ -1360,3 +1360,21 @@ main[role="main"] {
   margin-top: 0;
   padding-top: 120px;
 }
+
+.h-banner {
+  position: absolute;
+  top: 60px;
+
+  &::after {
+    content: '';
+    clear: both;
+  }
+
+  .h-pc-banner img, .h-mobile-banner img{
+    width: 100%;
+    height: auto;
+  }
+  .h-mobile-banner {
+    display: none;
+  }
+}

@@ -43,49 +43,17 @@
  */
 #}
 <div class="layout-container">
-  <header role="header" class="header">
+  <header role="header" class="header white-desktop">
     {{ page.header }}
   </header>
 
-  <div class="banner" role="banner">
-    {{ page.banner }}
+  <div class="h-banner" role="h-banner">
+    {{ page.highlightsBanner }}
   </div>
-  <div class="provider" role="provider">
-    {{ page.provider }}
-  </div>
-  <div class="custom" role="custom">
-    {{ page.custom }}
-  </div>
-  <div class="innovation" role="innovation">
-    {{ page.innovation }}
-  </div>
-  <div id="location" class="location" role="location">
-    {{ page.locationhero.locationherodescription }}
-    <div class="location-container">
-      {% if page.locationhero.locationheromap %}
-        <div class="view-header">
-          <div class="map">{{ page.locationhero.locationheromap }}</div>
-        </div>
-      {% endif %}
-      {% if page.locationhero.views_block__location_show_block_1 %}
-        <div class="view-content">
-          {{ page.locationhero.views_block__location_show_block_1 }}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-  <div class="office">
-      <div class="view-content">
-          {{ page.office.officeswiper }}
-      </div>
-       {{ page.office.chinaoffice }}
-  </div>
-  <div class="subscription">
-      {{ page.subscription.subscriptionctn }}
-  </div>
-{#  <main role="main">#}
-{#      {{ page.content }}#}
-{#  </main>#}
+
+  <main role="main">
+    {{ page.content }}
+  </main>
 
   {% include '@CIAndT/custom-footer.html.twig' %}
 

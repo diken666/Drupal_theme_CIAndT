@@ -240,4 +240,13 @@
         }
 
     }
+
+    .h-banner {
+        .h-mobile-banner {
+            display: block;
+        }
+        .h-pc-banner {
+            display: none;
+        }
+    }
 }
