@@ -1375,3 +1375,23 @@ main[role="main"] {
     display: none;
   }
 }
+
+.high-main {
+  .h-main-region {
+    width: 84%;
+    margin: 100px auto 150px;
+    position: relative;
+    overflow: hidden;
+    
+    .views-element-container {
+      width: 75%;
+      float: left;
+      padding-bottom: 10px;
+    }
+    .article-taxonomy {
+      width: 25%;
+      float: right;
+    }
+  }
+  
+}

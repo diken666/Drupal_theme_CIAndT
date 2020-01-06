@@ -79,8 +79,8 @@
             
         }
     }
-    .drivenByImpactWhite, .drivenByImpactWhite {
-        display: none;
+    .drivenByImpactWhite, .drivenByImpactRed {
+        display: none !important;
     }
     .provider {
         .views-row:hover  ul, .views-row:hover .provider-pic{
