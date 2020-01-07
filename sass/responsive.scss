@@ -245,8 +245,81 @@
         .h-mobile-banner {
             display: block;
         }
-        .h-pc-banner {
+        .h-pc-banner, .breadcrumb-container {
             display: none;
+        }
+    }
+
+    .h-container {
+        margin-bottom: 50px;
+        box-sizing: border-box;
+
+        .h-article-type {
+            float: none;
+            width: 100%;
+
+            .article-type-header {
+                display: none;
+            }
+            li {
+                width: 30%;
+                display: inline-block;
+                border: none;
+                text-align: center;
+            }
+            div[role=navigation] {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+        .h-main-region {
+            width: 100%;
+        }
+        
+        .high-main {
+            float: none;
+            width: 100%;
+
+            .views-element-container  {
+                .view-content {
+                    padding-right: 0;
+                    border-right: none;
+                    padding-left: 0;
+    
+                    .views-row {
+                        display: block;
+                        box-sizing: border-box;
+                        padding: 30px 10px 0 10px;
+                        margin-top: 40px;
+
+                        &:hover {
+                            box-shadow: 0 5px 10px #eee;
+                          }
+                    }
+                    .row-image {
+                        width: 100%;
+                        float: none;
+                        margin-right: 0;
+                    }
+                    .row-body {
+                        width: 100%;
+                        float: none;
+                        padding: 10px;
+
+                        .field-type, .field-link{
+                            display: none;
+                        }
+                    }
+
+                    .field-group{
+                        position: absolute; 
+                        top: 0;
+                        left: 0;
+                        padding-left: 15px;
+                    }
+                    
+                }
+            }
         }
     }
 }

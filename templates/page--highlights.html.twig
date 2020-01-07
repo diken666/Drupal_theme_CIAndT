@@ -43,7 +43,7 @@
  */
 #}
 <div class="layout-container">
-  <header role="header" class="header white-desktop">
+  <header role="header" class="header white-desktop none-opacity">
     {{ page.header }}
   </header>
 
@@ -53,12 +53,12 @@
 
   <div class="h-container">
     <div class="h-main-region">
-      <main role="main" class="high-main">
-        {{ page.content }}  
-      </main>
       <div class="h-article-type">
         {{ page.articleType }}
       </div>
+      <main role="main" class="high-main">
+        {{ page.content }}  
+      </main>
     </div>
   </div>
   
