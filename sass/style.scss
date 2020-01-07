@@ -1377,20 +1377,29 @@ main[role="main"] {
 }
 
 .high-main {
+  padding-top: 0;
+
+  &::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
   .h-main-region {
     width: 84%;
     margin: 100px auto 150px;
     position: relative;
-    overflow: hidden;
 
     .views-element-container {
       width: 75%;
       float: left;
-      overflow: hidden;
+      
       .view-content {
         padding-right: 5%;
         border-right: 1px solid #d3d3d3;
-        margin-bottom: -50%;
+        // margin-bottom: -50%;
         padding-bottom: 50%;
         padding-left: 5px;
       }
@@ -1398,12 +1407,18 @@ main[role="main"] {
         margin-top: 60px;
         position: relative;
         padding: 20px;
+        line-height: 1.5;
 
         &::after {
+          visibility: hidden;
+          display: block;
+          font-size: 0;
+          content: " ";
           clear: both;
+          height: 0;
         }
         &:hover {
-          box-shadow: 0 0 5px #888;
+          box-shadow: 0 0 10px #999;
         }
       }
       .row-image{
@@ -1427,6 +1442,58 @@ main[role="main"] {
         
         a {
           color: #333232;
+        }
+      }
+      .field-type {
+        background: #222;
+        color: #fff;
+        padding: 0 3px;
+        margin-right: 12px;
+      }
+      .field-author {
+        font-weight: bold;
+        font-style: italic;
+        color: #3e4346;
+        margin-right: 12px;
+      }
+      .field-created{
+        color: #a7a7a7;
+      }
+      .field-body {
+        color: #a7a7a7;
+        max-height: 48px;
+        overflow: hidden;
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+      .field-link a {
+        color: #3e4346;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 6px 0 6px 8px;
+          border-color: transparent transparent transparent #3e4346;
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+      .field-group {
+        &::after {
+          visibility: hidden;
+          display: block;
+          font-size: 0;
+          content: " ";
+          clear: both;
+          height: 0;
+        }
+        div{
+          float: left;
         }
       }
     }
