@@ -1375,10 +1375,7 @@ main[role="main"] {
     display: none;
   }
 }
-
-.high-main {
-  padding-top: 0;
-
+.h-container {
   &::after {
     visibility: hidden;
     display: block;
@@ -1391,10 +1388,14 @@ main[role="main"] {
     width: 84%;
     margin: 100px auto 150px;
     position: relative;
+  }
 
+  .high-main {
+    padding-top: 0;
+    width: 84%;
+    margin: 100px auto 150px;
+    position: relative;
     .views-element-container {
-      width: 75%;
-      float: left;
       
       .view-content {
         padding-right: 5%;
@@ -1501,6 +1502,7 @@ main[role="main"] {
       width: 25%;
       float: right;
     }
+    
   }
-  
+
 }

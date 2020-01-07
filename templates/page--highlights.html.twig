@@ -51,11 +51,17 @@
     {{ page.highlightsBanner }}
   </div>
 
-  <main role="main" class="high-main">
+  <div class="h-container">
     <div class="h-main-region">
-      {{ page.content }}
+      <main role="main" class="high-main">
+        {{ page.content }}  
+      </main>
+      <div class="h-article-type">
+        {{ page.articleType }}
+      </div>
     </div>
-  </main>
+  </div>
+  
 
   {% include '@CIAndT/custom-footer.html.twig' %}
 
