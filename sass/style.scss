@@ -1398,15 +1398,35 @@ main[role="main"] {
         margin-top: 60px;
         position: relative;
         padding: 20px;
+
+        &::after {
+          clear: both;
+        }
+        &:hover {
+          box-shadow: 0 0 5px #888;
+        }
       }
-      .views-field-field-image {
+      .row-image{
         width: 28%;
         float: left;
-        margin-right: 4%;
-        
+        margin-right: 4%; 
         & img {
           width: 100%;
           height: auto;
+        }
+      }
+      .row-body {
+        width: 68%;
+        float: right;
+      }
+      .field-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-size: 1.375rem;
+        
+        a {
+          color: #333232;
         }
       }
     }
