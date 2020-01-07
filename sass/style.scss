@@ -1376,6 +1376,8 @@ main[role="main"] {
   }
 }
 .h-container {
+  margin-bottom: 240px;
+  
   &::after {
     visibility: hidden;
     display: block;
@@ -1397,7 +1399,7 @@ main[role="main"] {
     float: left;
 
     .views-element-container {
-      margin-bottom: 150px;
+      
       .view-content {
         padding-right: 5%;
         border-right: 1px solid #d3d3d3;
@@ -1543,10 +1545,10 @@ main[role="main"] {
         left: -30px;
       }
     }
-    .article-taxonomy {
+    div[role="navigation"] {
       margin-left: 25%;
     }
-    .views-row {
+    li{
       line-height: 56px;
       border-bottom: 1px dashed #d3d3d3;
 
