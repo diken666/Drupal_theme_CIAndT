@@ -78,12 +78,22 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'article-content-body'
   ]
 %}
-{{ attach_library('classy/node') }}
-<div></div>
-<article{{ attributes.addClass(classes) }}>
 
+{{ attach_library('classy/node') }}
+<div class="article-region-breadcrumb">
+  <div>
+    <ul class="breadcrumb">
+      <li><a href="/drupal/highlights" title="资讯中心">资讯中心</a></li>
+      <li>{{ content.field_article_type}}</li>
+      <li>{{ label }}</li>
+    </ul>
+  </div>
+</div>
+
+<article{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
@@ -93,13 +103,14 @@
   {{ title_suffix }}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ label }}
-    {{ author_picture }} {{author_name}} {{metadata}} {{ node.getCreatedTime() }} 
-      {{ content.field_article_type}}
+    <div class="article-cover">
       {{ content.field_image}}
-      {{ content.body}}
-      
-
+    </div>
+    {{ label }}
+    <div class="article-user">
+      {{ author_picture }} {{author_name}} {{metadata}} {{ node.getCreatedTime() }} 
+    </div>
+    {{ content.body}}
   </div>
 
 </article>

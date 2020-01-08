@@ -1624,4 +1624,63 @@ main[role="main"] {
     }
   }
 }
+.article-region-breadcrumb {
+  & > div {
+    position: relative;
+    width: 84%;
+    margin: 0 auto;
+  }
+  .breadcrumb {
+    font-size: 14px;
+    font-size: .875rem;
+    margin: 40px auto 20px;
+    padding-bottom: 0;
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 16px;
+      background-image: url("../images/icon5.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: block;
+      position: absolute;
+      left: -30px;
+    }
+
+    li {
+      display: inline-block;
+      &:nth-child(n+2)::before {
+        content: '>';
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 4px;
+        color: #5c5b5b;
+      }
+      &:last-child::before {
+        color: #4d4c4c;
+      }
+    }
+    a {
+      color: #5c5b5b;
+    }
+  }
+}
+.article-content-body {
+  .node__content {
+    width: 84%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .article-cover {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
 
