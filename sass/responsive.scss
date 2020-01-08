@@ -323,4 +323,23 @@
             }
         }
     }
+    .article-content-body {
+        margin-bottom: 30px;
+
+        .node__content {
+            width: auto;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+
+        .mobile-visible {
+            display: block;
+        }
+        .pc-visible {
+            display: none;
+        }
+    }
+    .article-region-breadcrumb {
+        display: none;
+    }
 }

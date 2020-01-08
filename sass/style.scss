@@ -1667,10 +1667,13 @@ main[role="main"] {
   }
 }
 .article-content-body {
+  margin-bottom: 150px;
+
   .node__content {
     width: 84%;
     margin: 0 auto;
     overflow: hidden;
+    line-height: 1.5;
 
     .article-cover {
       width: 100%;
@@ -1678,6 +1681,24 @@ main[role="main"] {
       img {
         width: 100%;
         height: auto;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+    p {
+      color: #5c5b5b;
+      font-size: 14px;
+      font-size: .875rem;
+      margin: 1rem 0;
+
+      a {
+        color: #337ab7;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -1721,6 +1742,12 @@ main[role="main"] {
         color: #1a1c1c;
       }
     }
+    .article-time {
+      color: #a7a7a7;
+    }
+  }
+  .mobile-visible {
+    display: none;
   }
 }
 

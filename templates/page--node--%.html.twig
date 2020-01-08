@@ -50,7 +50,10 @@
   <main role="main">
       {{ page.content }}
   </main>
-
   {% include '@CIAndT/custom-footer.html.twig' %}
+  {% if page.contactUs %} 
+    <div class="black-board"></div>
+    {{ page.contactUs }}
+ {% endif %}
 
 </div>

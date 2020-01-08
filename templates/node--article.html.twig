@@ -103,7 +103,7 @@
   {{ title_suffix }}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <div class="article-cover">
+    <div class="article-cover pc-visible">
       {{ content.field_image}}
     </div>
     <div class="article-title">
@@ -116,8 +116,10 @@
       <div class="author-name">
         {{author_name}}
       </div>
-       {# {{ node.getCreatedTime() }}  #}
-       {{ date }}
+      <div class="article-time">{{ date }}</div>
+    </div>
+    <div class="article-cover mobile-visible">
+      {{ content.field_image}}
     </div>
     {{ content.body}}
   </div>
