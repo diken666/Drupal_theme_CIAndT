@@ -28,6 +28,14 @@ window.addEventListener("scroll", function() {
       header.classList.remove('white-desktop');
     }
   }
+
+  // 文章页面的监听事件
+  let breadcrumb = document.querySelector('.article-region-breadcrumb');
+  if ( breadcrumb && scrollTop >= 80 ) {
+    breadcrumb.style.position = 'fixed';
+  } else if ( breadcrumb && scrollTop < 80 ) {
+    breadcrumb.style.position = 'relative';
+  }
   
 });
 

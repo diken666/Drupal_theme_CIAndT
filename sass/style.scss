@@ -1625,6 +1625,11 @@ main[role="main"] {
   }
 }
 .article-region-breadcrumb {
+  padding: 40px 0 25px;
+  background: #fff;
+  width: 100%;
+  z-index: 99;
+
   & > div {
     position: relative;
     width: 84%;
@@ -1633,7 +1638,6 @@ main[role="main"] {
   .breadcrumb {
     font-size: 14px;
     font-size: .875rem;
-    margin: 40px auto 20px;
     padding-bottom: 0;
 
     &::before {

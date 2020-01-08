@@ -338,6 +338,12 @@
         .pc-visible {
             display: none;
         }
+        .article-author {
+            margin: 10px auto;
+            .author-img {
+                display: none;
+            }
+        } 
     }
     .article-region-breadcrumb {
         display: none;
