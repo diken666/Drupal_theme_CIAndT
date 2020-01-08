@@ -106,9 +106,18 @@
     <div class="article-cover">
       {{ content.field_image}}
     </div>
-    {{ label }}
-    <div class="article-user">
-      {{ author_picture }} {{author_name}} {{metadata}} {{ node.getCreatedTime() }} 
+    <div class="article-title">
+      {{ label }}
+    </div>
+    <div class="article-author">
+      <div class="author-img">
+        <img src="/drupal/themes/custom/CIAndT/images/user.png" alt="作者头像"/>
+      </div>
+      <div class="author-name">
+        {{author_name}}
+      </div>
+       {# {{ node.getCreatedTime() }}  #}
+       {{ date }}
     </div>
     {{ content.body}}
   </div>
