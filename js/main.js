@@ -1,14 +1,26 @@
 
 let fullScreenHeight = document.documentElement.clientHeight;
+let fullScreenWidth = document.documentElement.clientWidth;
 let banner = document.getElementsByClassName('banner')[0];
 if ( banner && fullScreenHeight ) {
   let bannerChild = banner.children;
   banner.style.height = fullScreenHeight + 'px';
   for (let item of bannerChild) {
-    if ( item.tagName !== 'SPAN' && item.tagName !== 'VIDEO') {
-      console.log(item.tagName)
+    if ( item.tagName !== 'SPAN' ) {
+      
       item.style.height = fullScreenHeight + 'px';
+
+      if ( item.tagName === 'VIDEO' && fullScreenWidth !== 0 && fullScreenHeight !== 0) {
+        // video宽高比1000/667
+        console.log(item.tagName, fullScreenHeight, fullScreenWidth)
+        if (fullScreenWidth / fullScreenHeight  > 1000 / 563) {
+          item.style.cssText = `width: ${fullScreenWidth}px; height:auto ;`
+        }else {
+          item.style.cssText = `width: auto; height: ${fullScreenHeight}px ;`
+        }
+      }
     }
+    
   }
 }
 
