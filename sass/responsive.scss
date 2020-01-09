@@ -353,4 +353,28 @@
     .article-region-breadcrumb {
         display: none;
     }
+    .article-share-box {
+        left: inherit;
+        right: 10px;
+        top: inherit;
+        bottom: 50px;
+
+        a {
+            background-image: url("../images/share@2x.png");
+            background-size: 49px;
+            box-shadow: 1px 1px 8px -1px #8e1027;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .bds_weixin,
+        .bds_tsina,
+        .bds_linkedin {
+            display: none;
+            opacity: 0;
+        }
+        .bds_share_btn{
+            display: block;
+            background-position-y: -147px; 
+          }
+    }
 }

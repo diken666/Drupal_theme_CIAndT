@@ -104,3 +104,30 @@ $('.black-board').click(()=>{
   $('.small-ctn').show().css({right: '-10px'});
 })
 
+// 为文章分享按钮添加事件
+$('.bds_share_btn').click(()=>{
+  if ( $('.bds_share_btn').hasClass('show') ) {
+    $('.bds_weixin').css({opacity:"0"}).hide(300);
+    $('.bds_tsina').css({opacity:"0"}).hide(300);
+    $('.bds_linkedin').css({opacity:"0"}).hide(300);
+    $('.bds_share_btn').removeClass('show');
+  } else {
+    $('.bds_weixin').css({display: 'block'}).animate({opacity:"1"}, 300);
+    $('.bds_tsina').css({display: 'block'}).animate({opacity:"1"}, 300);
+    $('.bds_linkedin').css({display: 'block'}).animate({opacity:"1"}, 300);
+    // setTimeout(()=>{
+    //   $('.bds_weixin').css({opacity:"1"});
+    //   $('.bds_tsina').css({opacity:"1"});
+    //   $('.bds_linkedin').css({opacity:"1"});
+    // }, 500)
+
+    // $('.bds_weixin').show().animate({opacity:"1"}, 500);
+    // $('.bds_tsina').show().animate({opacity:"1"}, 500);
+    // $('.bds_linkedin').show().animate({opacity:"1"}, 500);
+    $('.bds_share_btn').addClass('show');
+  }
+  // $('.bds_weixin').toggle(200);
+  // $('.bds_tsina').toggle(200);
+  // $('.bds_linkedin').toggle(200);
+})
+

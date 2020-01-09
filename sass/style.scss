@@ -1759,11 +1759,8 @@ main[role="main"] {
   left: 8%;
   top: 25%;
   margin-left: -80px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  border: 1px solid #000;
-
-
+  -webkit-transition: all .3s ease;
+  transition: all .3s linear;
 
   a {
     display: block;
@@ -1772,6 +1769,7 @@ main[role="main"] {
     height: 49px;
     background-image: url("../images/share.png");
     margin: 6px 0 25px;
+    transition: all .3s linear;
   }
 
   .bds_weixin {
@@ -1784,9 +1782,7 @@ main[role="main"] {
     background-position: 0 0;
   }
   .bds_share_btn{
-    background-image: url("../images/share@2x.png") !important ;
-    background-size: 49px;
-    background-position-y: -147px; 
+    display: none;
   }
 }
 
