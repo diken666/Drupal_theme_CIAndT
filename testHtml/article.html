@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        .article-share-box{
+            position: fixed;
+            left: 8%;
+            top: 25%;
+            margin-left: -80px;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            border: 1px solid #000;
+         }
+         .article-share-box a {
+            display: block;
+            padding-left: 0;
+            width: 49px;
+            height: 49px;
+            background-image: url("../images/share.png");
+            margin: 6px 0 25px;
+        }
+        .bds_weixin {
+            background-position: 0 -98px;
+        }
+        .bds_tsina {
+            background-position: 0 -49px;
+        }
+        .bds_linkedin {
+            background-position: 0 0;
+        }
+        .bds_share_btn{
+            background-image: url("../images/share@2x.png") !important ;
+            background-size: 49px;
+            background-position-y: -147px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="article-share-box">
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_share_btn"></a>
+    </div>
+</body>
+</html>

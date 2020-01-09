@@ -43,7 +43,6 @@
  */
 #}
 <div class="layout-container">
-
   <header role="header" class="header white-desktop none-opacity">
     {{ page.header }}
   </header>
@@ -51,6 +50,7 @@
       {{ page.content }}
   </main>
   {% include '@CIAndT/custom-footer.html.twig' %}
+  {{ page.articlePage }}
   {% if page.contactUs %} 
     <div class="black-board"></div>
     {{ page.contactUs }}

@@ -1754,5 +1754,41 @@ main[role="main"] {
     display: none;
   }
 }
+.article-share-box{
+  position: fixed;
+  left: 8%;
+  top: 25%;
+  margin-left: -80px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  border: 1px solid #000;
+
+
+
+  a {
+    display: block;
+    padding-left: 0;
+    width: 49px;
+    height: 49px;
+    background-image: url("../images/share.png");
+    margin: 6px 0 25px;
+  }
+
+  .bds_weixin {
+    background-position: 0 -98px;
+  }
+  .bds_tsina {
+    background-position: 0 -49px;
+  }
+  .bds_linkedin {
+    background-position: 0 0;
+  }
+  .bds_share_btn{
+    background-image: url("../images/share@2x.png") !important ;
+    background-size: 49px;
+    background-position-y: -147px; 
+  }
+}
+
 
 
